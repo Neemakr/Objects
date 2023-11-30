@@ -63,3 +63,15 @@ Object.defineProperty(obj, "subtract", {
 });
 obj.subtract = 1;
 console.log(obj.counter);
+
+const student = {
+    name : "Neema"
+}
+//console.log(student.id);
+Object.defineProperty(student, 'id', {
+    value : 55,
+    writable : true
+});
+console.log(student.id);
+student.id = 77;
+console.log(student.id);

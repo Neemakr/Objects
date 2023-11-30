@@ -16,3 +16,8 @@ console.log(person);
 //Deleting  a property
 delete person.age;
 console.log(person);
+
+person.getFullName = function(){
+    return person.firstName + " " + person.lastName;
+}
+console.log(person.getFullName());
